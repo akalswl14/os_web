@@ -6,189 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="1.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  h2 {ㄴ
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }
-  .jumbotron {
-      background-image: url('assets/touring.png');
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #70a4ff;
-      font-size: 50px;
-  }
-  .logo {
-      color: #70a4ff;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 70%;
-      height: 70%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #70a4ff;
-  }
-  .carousel-indicators li {
-      border-color: #70a4ff;
-  }
-  .carousel-indicators li.active {
-      background-color: #70a4ff;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #70a4ff;
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #70a4ff;
-      background-color: #fff !important;
-      color: #70a4ff;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #70a4ff !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #70a4ff;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #70a4ff;
-      z-index: 9999;
-      border: 0;
-      font-size: 18px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #000000 !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #70a4ff !important;
-      background-color: #000000 !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #000000 !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #70a4ff;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
+  <script src="1.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -211,7 +34,19 @@
         <li><a href="#foundation">재단</a></li>
         <li><a href="#people">인물</a></li>
         <li><a href="#community">커뮤니티</a></li>
-        <li><a href="#history">역사</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">역사<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="사상적배경.html">사상적배경</a></li>
+        <li><a href="1950-1960.html">1950-1960</a></li>
+        <li><a href="1960-1970.html">1960-1970</a></li>
+        <li><a href="1970-1980.html">1970-1980</a></li>
+        <li><a href="1980-1990.html">1980-1990</a></li>
+        <li><a href="1990-1995.html">1990-1995</a></li>
+        <li><a href="1995-2000.html">1995-2000</a></li>
+        <li><a href="2000-2005.html">2000-2005</a></li>
+        <li><a href="2005-2018.html">2005-2018</a></li>
+      </ul>
+    </li>
       </ul>
     </div>
   </div>
@@ -397,28 +232,28 @@
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/800px-Richard_Stallman_-_Fête_de_l'Humanité_2014_-_010.jpg" alt="Paris" width="100" height="200">
-          <p><strong>리처드 스톨먼</strong></p>
+          <img src="assets/800px-Richard_Stallman_-_Fête_de_l'Humanité_2014_-_010.jpg" alt="Paris" width="100" height="150">
+          <p><strong>  <a href="stallman.html">리처드 스톨먼</a></strong></p>
           <p>initializer of FS movement</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/800px-LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpg" alt="New York" width="100" height="200">
+          <img src="assets/800px-LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpg" alt="New York" width="100" height="150">
           <p><strong>  <a href="linus.html">리누스 토발즈</a></strong></p>
-          <p>Linux kerner developer</p>
+          <p>Linux kelner developer</p>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/Eric_Steven_Raymond.CUT.png" alt="San Francisco" width="100" height="200">
-          <p><strong>에릭 레이몬드</strong></p>
+          <img src="assets/Eric_Steven_Raymond.CUT.png" alt="San Francisco" width="100" height="150">
+          <p><strong>  <a href="reimand.html">에릭 레이먼드</a></strong></p>
           <p>author of cathedral and bazzar</p>
         </div>
       </div>
     </div><br>
 
-    <h2>주요 사항</h2>
+    <h2>천상천하 유아독존</h2>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -430,51 +265,17 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <h4>리처드 스톨먼<p></p>1960년대 고등학교 저학년 시절 처음으로 개인용 컴퓨터를 접했다.<p></p>
-            IBM 뉴욕 과학센터에서 일하면서 고등학교 졸업 후의 여름을 보냈고 IBM 7064를 위한 전처리기를 PL/I 프로그래밍 언어로 작성함.<p></p>
-            1971년 하버드 대학에 입학해서 MIT 인공지능 실험실의 해커가 됨.<p></p>
-            심볼릭스의 결과물들과 똑같은 기능의 프로그램을 작성하여 그들의 독점을 막는 일을 계속함.<p></p>
-            그러나 비밀 유지 합의서에 사인하기를 요구받아서 다른 이들과의 공유나 이웃을 돕는 것에 위배되는 작업들을 수행할 것을 요구받음.<p></p>
-            1985년 GNU 선언문을 발표하다. 얼마 안 있어 자유 소프트웨어 재단을 설립함.1989년 GPL내에 카피레프트의 개념을 적용하였다.</p><p></p><p></p>
-            자유 소프트웨어 VS. 오픈 소스
-<p></p><p></p>
-            스톨먼의 도덕주의적인 입장과 개인적인 철학엔 코드를 공유하자는 개념에 동의하는 프로그래머들 중 많은 수가 동의하지 않았다.<p></p>
-            이런 과정에서 자유 소프트웨어 운동의 대안인 오픈 소스 운동이 생겨났다.<p></p>
-            자유 소프트웨어와 오픈소스 소프트웨어는 같은 소프트웨어를 지칭하기도 하지만 바라보는 관점에서 차이가 있었는데,<p></p>
-            오픈소스는 개발 방법론이고 자유 소프트웨어는 사회적 운동이라는 것이다.<p></p>
-            자유 소프트웨어는 윤리적 명령으로서 사용자에게 주어진 자유를 기본적으로 중요하게 생각했다.<p></p>
-            오픈소스 철학은 실용적인 관점에서 소프트웨어를 어떻게 잘 만들 것인가를 고려한다.<p></p><p></p>
+          <h4>리처드 스톨먼<p></p><br></br>
+            스티브 잡스의 부고를 접한 뒤에<br></br>"죽어서 기쁜 건 아니지만 사라져서 기쁘다"<p></p>
 
         </div>
         <div class="item">
-          <h4>리누스 토르발스의 생애<p></p>
-            1969년 12월 28일, 핀란드 헬싱키에서 닐스 토르발스와 안나 토르발스의 아들로 출생<p></p>
-            1988년 헬싱키 대학교에 입학함.1989년 포병 관측 장교로 핀란드 군에 입대하여 소위로서 11개월간 복무함.<p></p>
-            1990년 DEC MicroVAX에서 운영하는 ULTRIX의 형태로 유닉스와 조우함.<p></p>
-            1991년 2월 2일 인텔 80386 기반의 IBM PC를 구입함.<p></p>
-            1991년말 리눅스를 대중에 공개1994년 리눅스 1.0를 내놓았음.<p></p>
-            1996년 컴퓨터 과학 석사로 졸업1997년 Transmeta에 방문 후 2003년 6월까지 재직함.<p></p>
-            2003년 부터 오픈소스 개발 연구소에 재직2004년 Dunthorpe, Oregon으로 가족들과 이사함.<p></p>
-            2008년 페도라 리눅스 배포판을 사용하기 시작함.현재는 리눅스 재단이 토르발스를 지원함으로써 온전히 리눅스 개발에 집중하고 있음.<p></p>
-            2018년 9월 16일, CoC(Code of Conduct)를 발표함으로써 오픈소스계에 큰 파장을 불러 일으킴.<p></p>
+          <h4>리누스 토르발스<p></p><br></br>
+             "그런 개발자라면 차라리 자살하라. 이 세상을 위해서는 그게 나을 것이다"
         </div>
         <div class="item">
-          <h4>생애<p></p>
-            1957년 12월 4일 매사추세츠주 보스턴에서 출생함.<p></p>
-            1971년 펜실베니아로 이사했다.<p></p>
-            1980년 ~ 1985년 독점 소프트웨어 개발로 프로그래밍 커리어를 시작함.<p></p>
-            1990년 자곤 파일("신 해커사전)을 편집함.<p></p>
-            1996년 후에 Fetchmail로 이름이 바뀌는 popclient라는 오픈소스 이메일 소프트웨어 개발을 맡았다.<p></p>
-            1999년 성당과 시장을 출판함.2000년 ~ 2002년 리눅스 문서 프로젝트에 포함된 HOWTO를 많이 작성함.<p></p>
-            <p></p>
-            경력<p></p>
-            신 해커사전(자곤 파일)<p></p>
-            성당과 시장<p></p>
-            유닉스 프로그래밍의 예술<p></p>
-            GNJ Emacs 알아보기 제3판<p></p>
-            기타 특이사항<p></p>
-            이교(Pagan)도다.<p></p>
-            태권도 검은띠의 소유자다.넷스케이프 소스코드 공개, 모질라 설립에 큰 영향을 끼쳤다.</h4>
+          <h4>에릭 레이먼드<p></p><br></br>
+            "올바로 동작하지 않더라도 걱정말아라. 모든 것이 그랬다면, 넌 직업을 잃었을테니까""
         </div>
       </div>
 
@@ -494,112 +295,46 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>커뮤니티</h2><br>
-      <h4>오픈소스 소프트웨어란?<p></p> 소프트웨어와 소스코드(원시코드)가 공개되어있어서 누구나 열람할 수 있고 수정할 수 있고,
-        그렇기에 누구나 향상시킬 수 있는 소프트웨어를 지칭한다.<p></p><p></p>
-        그렇다면 소스코드만 공개되어 있으면 오픈소스인건가?결론부터 말하자면 아니다.이는 후술할 오픈소스의 의의에 반하는 것이기 때문에 "소스코드"만
-        공개되어있다해서 오픈소스 소프트웨어인 것은 아니다.</h4><br><p></p>
-        <img src="assets/copyleft.png">
-        <img src="assets/copyright.png">
+      <h4>국내를 중심으로<p></p>
+오픈소스 개발은 커뮤니티를 중심으로 이루어진다. 이장에서는 국내의 오픈소스 커뮤니티들을 알아보자.<p></p><br></br>
+<strong>GNU korea</strong><p></p>
+자유소프트웨어 재단의 한국 지부이다. 프로그램을 짜는 것보다는 GNU관련 문서들을 번역하는데 중점을 두고 운
+영되고 있다.<p></p> 사이트에 접속하면 라이센스나 기타 자료들의 번역본을 GPL라이센스에 따라 사용할 수 있다.<p></p> 2000
+년에는 한국을 방문한 에릭 레이먼드를 데리고 관광을 다니기도 했다.<p></p>
+<a href="http://korea.gnu.org/">GNU KOREA</a><p></p><br></br>
+<strong>한국 공개소프트웨어 협회</strong><p></p>
+KOSSA로 불린다. 해외 오픈소스 커뮤니티와의 협력을 통해 기술 공유와 인재 양성을 하고 있다. 각종 오픈소스 개
+발 대회와 세미나를 개최하고 있다.<p></p>
+<a href="http://www.kossa.kr/">공개 소프트웨어 협회</a><p></p><br></br>
+<strong>공개소프트웨어 개발자 LAB</strong><p></p>
+오픈소스 시장이 커지면서 오픈소스 소프트웨어 개발역량을 국가적인 차원에서 지원하기 위해 만들어졌다.<p></p> 과학
+기술정보통신부와 정보통신산업진흥원이 후원하고 한국IT비즈니스진흥협회가 운영하며 우수 개발자 지원, 우수
+오픈소스 커뮤니티 지원, 교육, 세미나를 하고 있다. 돈이 많다는 건 좋은것이다.<p></p>
+<a href="https://kosslab.kr/">공개소프트웨어 개발자 LAB</a></a><p></p><br></br>
+<strong>공개소프트웨어 컴퓨터실</strong><p></p>
+중고등학생들을 위한 공개소프트웨어 커뮤니티이다.<p></p>주로 교육 목적의 활동을 하는 커뮤니티이다. <p></p>공교육으로서
+의 소프트웨어 교육은 보편적인 지식과 실습을 통해 이루어저야지 상용SW를 사용하는 것을 가르치는 것은 안된
+다는 것을 기치로 내걸고 있다.<p></p> 이러한 생각을 바탕으로 학교에 직접 개발한 리눅스기반 프로그램을 보급하고 있
+다. 활동이 적을것 같지만 학생들을 중심으로 활발하게 활동중이다.<p></p>
+<a href="https://cafe.naver.com/hardrestore">공개소프트웨어 컴퓨터실</a></a><p></p><br></br>
+<strong>앵커스 커뮤니티</strong><p></p>
+데이터 마이닝/머신러닝 분석 알고리즘 라이브러리 ankus를 개발&활성화하는 것을 전문으로 하는 커뮤니티이다.<p></p>
+GPL ver.3.0 라이센스로 한국에서 개발한 소프트웨어로 지금도 기여를 통해 코드를 보완하고 있다. <p></p>코드 홍보와
+세미나도 열고 있다.<p></p>
+<a href="http://www.openankus.org/zeus/">앵커스 커뮤니티</a></a><p></p><br></br>
+<strong>OSGeo Korean Chapter</strong><p></p>
+오픈소스 지리정보시스템(GIS)을 개발하는 커뮤니티이다. 기여자들로 운영되고 있다. 특히 매년 GIS개발자들의
+모임인 FOSS4G 컨퍼런스를 개최하고 있다.<p></p>
+<a href="http://www.osgeo.kr/">KOREA GIS dev</a></a><p></p><br></br>
+<strong>루씬 한글분석기 커뮤니티</strong><p></p>
+공개SW 검색엔진인 Lucene을 한국어에서 잘 사용할 수 있도록 한글형태소분석을 기반으로 한 루씬한글분석기를
+개발하는 커뮤니티 이다.<p></p>
+<a href="https://cafe.naver.com/korlucene">LUCENE 한글분석기 커뮤니티</a></a><p></p><br></br>
     </div>
     <div class="col-sm-4">
     </div>
   </div>
 </div>
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="assets/kde.png">
-    </div>
-    <div class="col-sm-8">
-      <h2>오픈소스 소프트웨어의 장점</h2><br>
-      <h4>이용에 비용이 들지 않거나 적다.<p></p>
-      이용자가 원하는 대로 맞춤 설정이 가능하다.<p></p>
-      보안 취약점이 쉽계 발견되어 빠른 피드백이 가능하다.<p></p>
-      특정 회사에 의존적이지 않다.<p></p><p></p>
-</h4><br>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="assets/kde.png">
-    </div>
-    <div class="col-sm-8">
-      <h2>오픈소스 소프트웨어의 단점</h2><br>
-      <h4>비숙련 사용자들은 사용이 어렵다.<p></p>
-      문서화가 제대로 되어 있지 않은 경우가 있다.<p></p>
-      핵심 프로젝트 보다 주변에 집중해야하는 경우가 더러있다.<p></p>
-      이미 표준적으로 사용되는 소프트웨어가 있는 경우 호환성 문제가 발생할 수 있다.<p></p>
-      고객지원이 불리하다.</p><p></p>
-</h4><br>
-    </div>
-  </div>
-</div>
-
-<div id="history" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>역사</h2><br>
-      <h4>오픈소스 소프트웨어란?<p></p> 소프트웨어와 소스코드(원시코드)가 공개되어있어서 누구나 열람할 수 있고 수정할 수 있고,
-        그렇기에 누구나 향상시킬 수 있는 소프트웨어를 지칭한다.<p></p><p></p>
-        그렇다면 소스코드만 공개되어 있으면 오픈소스인건가?결론부터 말하자면 아니다.이는 후술할 오픈소스의 의의에 반하는 것이기 때문에 "소스코드"만
-        공개되어있다해서 오픈소스 소프트웨어인 것은 아니다.</h4><br><p></p>
-        <img src="assets/copyleft.png">
-        <img src="assets/copyright.png">
-    </div>
-    <div class="col-sm-4">
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="assets/kde.png">
-    </div>
-    <div class="col-sm-8">
-      <h2>오픈소스 소프트웨어의 장점</h2><br>
-      <h4>이용에 비용이 들지 않거나 적다.<p></p>
-      이용자가 원하는 대로 맞춤 설정이 가능하다.<p></p>
-      보안 취약점이 쉽계 발견되어 빠른 피드백이 가능하다.<p></p>
-      특정 회사에 의존적이지 않다.<p></p><p></p>
-</h4><br>
-    </div>
-  </div>
-</div>
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="assets/kde.png">
-    </div>
-    <div class="col-sm-8">
-      <h2>오픈소스 소프트웨어의 단점</h2><br>
-      <h4>비숙련 사용자들은 사용이 어렵다.<p></p>
-      문서화가 제대로 되어 있지 않은 경우가 있다.<p></p>
-      핵심 프로젝트 보다 주변에 집중해야하는 경우가 더러있다.<p></p>
-      이미 표준적으로 사용되는 소프트웨어가 있는 경우 호환성 문제가 발생할 수 있다.<p></p>
-      고객지원이 불리하다.</p><p></p>
-</h4><br>
-    </div>
-  </div>
-</div>
-
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
@@ -607,43 +342,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   </a>
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
 
 </body>
 </html>
