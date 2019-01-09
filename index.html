@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>All About OpenSource</title>
+  <!-- 홈페이지 탭란 이름 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="Test_css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="test_js.js"></script>
+
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">OPENSOURCE</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#about">ABOUT</a></li> -->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">소개<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="#about">오픈소스란?</a></li> -->
+              <li><a href="1.html#definition">정의</a></li>
+              <li><a href="1.html#point">장단점</a></li>
+              <!-- <li><a href="1.html#license">라이선스</a></li> -->
+            </ul>
+          </li>
+          <li><a href="#license">라이선스</a></li>
+          <li><a href="#software">소프트웨어</a></li>
+          <li><a href="#develop">개발방법론</a></li>
+          <li><a href="#foundation">재단</a></li>
+          <li><a href="#people">인물</a></li>
+          <li><a href="#community">커뮤니티</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">역사<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="background.html">사상적배경</a></li>
+              <li><a href="1950-1960.html">1950-1960</a></li>
+              <li><a href="1960-1970.html">1960-1970</a></li>
+              <li><a href="1970-1980.html">1970-1980</a></li>
+              <li><a href="1980-1990.html">1980-1990</a></li>
+              <li><a href="1990-1995.html">1990-1995</a></li>
+              <li><a href="1995-2000.html">1995-2000</a></li>
+              <li><a href="2000-2018.html">2000-2018</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1>오픈소스에 대한 모든 것</h1>
+    <p>Univ.Hanyang,Erica OpenSourceSW Basic TeamProject</p>
+  </div>
+
+  <!-- Container (About Section) -->
+    <div id="about" class="container-fluid text-center">
+      <div class="row">
+        <!-- <div class="col-sm-10"> -->
+        <h2>오픈소스를 알고자 방문한 여러분을 환영한다.</h2><br>
+        <!-- <h4>전체내용 </h4><br> -->
+        <p>오픈소스를 알리기 위해 제작한 우리 팀의 책 내용은 약 70페이지에 달하는 긴 책이기에 바쁜 현대인들은
+          읽을 시간이 없을 것으로 우리팀은 예상했다. 따라서, 정말 필요한 내용만을 담아서 요약본을 제공하고자 이 페이지를 제작하게 되었는데,
+          핵심적인 내용은 모두 들어간 웹페이지라 자부할 수 있다. 이 웹페이지를 통해 오픈소스에 대하여 필요한 것을 알아가길 바라며,
+          만약 흥미가 생겨서 우리 팀의 책도 같이 참고한다면 오픈소스에 대한 이해도를 훨씬 높일 수 있을 것이라 생각한다.</p>
+        <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
+      </div>
+    </div>
+
+  <!-- Container (License Section) -->
+  <div id="license" class="container-fluid text-center bg-grey">
+    <h2>오픈소스의 라이선스</h2>
+    <p style="color:#303030;">라이선스는 어떠한 사물에 대한 재산권의 소유 권리를 가진 사람을 말하는데 이 사람은 어떠한 사물을 타인이 이용 하게 하는 것에 대해 기간,금지사항,요금 등의
+      권리를 법의 테두리 안에서 주장할 수 있다.<br> 마찬가지로 오픈소스 라이선스란 어떤 오픈소스에 대해 소유 권한을 가진 이가 정하는 이용규칙을 뜻한다고 볼 수 있다. 오픈소스 라이선 스에는 저작권,
+      특허권, 상표권, 영업비밀 4가지 영역에서 다뤄진다.</p>
+    <h3>오픈소스 라이선스의 종류</h3>
+    <h4>1.BSD형</h4>
+    <p>BSD형 라이선스는 비교적 규제사항이 적은 라이선스에 속한다. 수정 재배포시 같은 라이선스를 줘야하는 카피레 프트 조항이 없는 점이 특히 더 그렇다. 또한 소스코드를 공개하지 않아도 된다. </p>
+    <h4>2.GPL형</h4>
+    <p>GPL형 라이선스는 이름에서 알 수 있듯이 자유소프트웨어 재단에서 만들었다. 카피레프트 조항이 있고 소스코드 는 무조건 공개되어야한다는 조항이 있다. 아주 엄격한 라이선스이다.</p>
+    <h4>3.MPL형</h4>
+    <p>MPL형 라이선스는 주로 기업들이 주도하며, 처음부터 법률가들이 참여하여 만들었기 때문에 소프트웨어 라이선스의 관점에서는
+      더욱 정교하다고 볼 수 있지만, 프로그래머들에게는 그만큼 복잡하고 이해하기 어려운
+      라이선스들이다.</p>
+    <a href="license.html" class="btn btn-default btn-lg" role="button">오픈소스 라이선스에 대해 더 알고 싶다면?</a>
+  </div>
+
+  <!-- Container (software Section) -->
+  <div id="software" class="container-fluid text-center">
+    <h2>오늘날의 오픈소스 소프트웨어</h2>
+    <h4>대표적인 6가지</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="assets/linux_sq.jpeg" width=150 hight=150>
+        <h4>시스템 소프트웨어</h4>
+        <p>Linux</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/gnu-sq.png" width=150 hight=150>
+        <h4>소프트웨어 개발</h4>
+        <p>GCC</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/sql_sq.jpeg" width=150 hight=150>
+        <h4>데이터 베이스</h4>
+        <p>MySQL</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="assets/apache_sq.jpeg" width=150 hight=150>
+        <h4>웹,어플리케이션 서버</h4>
+        <p>Apache HTTP server</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/wireshark_sq.jpeg" width=150 hight=150>
+        <h4>시스템도구</h4>
+        <p>Wireshark</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/firefox_sq.jpeg" width=150 hight=150>
+        <h4 style="color:#303030;">데스크탑</h4>
+        <p>firefox</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (develop Section) -->
+  <div id="develop" class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-10">
+        <h2>오픈소스 개발방법론</h2><br>
+        <h4>오픈소스도 마찬가지로 처음에는 불완전하지만 작동하는 형태에 많은 이들의 협업을 통해 점차 어른으로 성장해가는 과정을 거친다. 개발 방식에서도 오픈소스 자체를 만드는 커뮤니티처럼 수평적 조직을
+          운영해야하는 이유가 여기에 있다.</h4><br>
+      </div>
+
+      <div class="col-sm-10">
+        <h4>개발과정</h4>
+        <p>MIT 라이선스는 미국 매사추세츠공과대학교(MIT)에서 해당 대학 SW 공학도들을 돕기 위해 개발한 라이선스다. 라이선스와 저작권 관련 명시만 지켜주면 되는 라이선스로, 가장
+          느슨한 조건을 가진 라이선스 중 하나이기 때문에 인기가 많다.</p>
+        <ol>
+          <li>클라이언트의 요구사항 접수</li>
+          <li>오픈소스 활용</li>
+          <li>설계,개발</li>
+          <li>테스팅</li>
+          <li>검토프로그램 출고</li>
+        </ol>
+      </div>
+
+      <div class="col-sm-10">
+        <h4>의의</h4>
+        <p>오픈소스 개발방법론은 소프트웨어 산업에서 중요한 의미를 갖는다. 소프트웨어 개발은 시간도 오래걸리고 어렵 고 힘들어서 많은 개발자들이 떠날 정도 였다.그러나 오픈소스를
+          사용함으로써 코드는 재사용, 재가공되고 많은 비용과 시간을 줄일 수 있게되었다. 'We are better than me.'가 오픈소스 개발의 기치이다. 백지장도 맞들면 낫다는 속담을 증명하는 것만
+          같은 분야이다.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Container (Foundation Section) -->
+  <div id="foundation" class="container-fluid text-center">
+    <h2>재단</h2><br>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/GNU_logo.jpg" alt="FSF" width="80" height="80">
+          <p><h3><strong>FSF</strong></h3></p>
+          <a href="FSF.html" class="btn btn-default btn-lg" role="button">자유 소프트웨어 진영</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/Linux_Foundation_logo.jpg" alt="TLF" width="80" height="80">
+          <p><h3><strong>Linux</strong></h3></p>
+          <a href="LF.html" class="btn btn-default btn-lg" role="button">리눅스 진영</a>
+        </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="assets/osilogo.jpeg" alt="OSI" width="80" height="80">
+            <p><h3><strong>OSI</strong></h3></p>
+            <a href="OSI.html" class="btn btn-default btn-lg" role="button">오픈소스 진영</a>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <!-- Container (People Section) -->
+  <div id="people" class="container-fluid bg-grey">
+    <h2>사람들</h2><br>
+    <h4>오픈소스 세계의 세 기둥서방</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/stal1234.jpg" width="80"
+            height="120">
+          <p><strong> <a href="stallman.html">리처드 스톨먼</a></strong></p>
+          <p>initializer of FS movement</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/800px-LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpeg" alt="New York" width="80" height="120">
+          <p><strong> <a href="linus.html">리누스 토발즈</a></strong></p>
+          <p>Linux kernel developer</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/Eric_Steven_Raymond.CUT.jpeg" alt="San Francisco" width="80" height="120">
+          <p><strong> <a href="reimand.html">에릭 레이먼드</a></strong></p>
+          <p>author of cathedral and bazaar</p>
+        </div>
+      </div>
+    </div><br>
+
+    <h2></h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>리처드 스톨먼<p></p><br>
+            스티브 잡스의 부고를 접한 뒤에<br>"죽어서 기쁜 건 아니지만 사라져서 기쁘다"<p></p>
+
+        </div>
+        <div class="item">
+          <h4>리누스 토발즈<p></p><br>
+            "그런 개발자라면 차라리 자살하라. 이 세상을 위해서는 그게 나을 것이다"
+        </div>
+        <div class="item">
+          <h4>에릭 레이먼드<p></p><br>
+            "올바로 동작하지 않더라도 걱정말아라. 모든 것이 그랬다면, 넌 직업을 잃었을테니까""
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">앞으로</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">뒤로</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Container (Community Section) -->
+  <div id="community" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>커뮤니티</h2><br>
+        <h4>국내를 중심으로<p></p>
+  오픈소스 개발은 커뮤니티를 중심으로 이루어진다. 이장에서는 국내의 오픈소스 커뮤니티들을 알아보자.<p></p><br>
+  <strong>GNU korea</strong><p></p>
+  자유소프트웨어 재단의 한국 지부이다. 프로그램을 짜는 것보다는 GNU관련 문서들을 번역하는데 중점을 두고 운
+  영되고 있다.<p></p> 사이트에 접속하면 라이센스나 기타 자료들의 번역본을 GPL라이센스에 따라 사용할 수 있다.<p></p> 2000
+  년에는 한국을 방문한 에릭 레이먼드를 데리고 관광을 다니기도 했다.<p></p>
+  <a href="http://korea.gnu.org/">GNU KOREA</a><p></p><br>
+  <strong>한국 공개소프트웨어 협회</strong><p></p>
+  KOSSA로 불린다. 해외 오픈소스 커뮤니티와의 협력을 통해 기술 공유와 인재 양성을 하고 있다. 각종 오픈소스 개
+  발 대회와 세미나를 개최하고 있다.<p></p>
+  <a href="http://www.kossa.kr/">공개 소프트웨어 협회</a><p></p><br>
+  <strong>공개소프트웨어 개발자 LAB</strong><p></p>
+  오픈소스 시장이 커지면서 오픈소스 소프트웨어 개발역량을 국가적인 차원에서 지원하기 위해 만들어졌다.<p></p> 과학
+  기술정보통신부와 정보통신산업진흥원이 후원하고 한국IT비즈니스진흥협회가 운영하며 우수 개발자 지원, 우수
+  오픈소스 커뮤니티 지원, 교육, 세미나를 하고 있다. 돈이 많다는 건 좋은것이다.<p></p>
+  <a href="https://kosslab.kr/">공개소프트웨어 개발자 LAB</a></a><p></p><br>
+  <strong>공개소프트웨어 컴퓨터실</strong><p></p>
+  중고등학생들을 위한 공개소프트웨어 커뮤니티이다.<p></p>주로 교육 목적의 활동을 하는 커뮤니티이다. <p></p>공교육으로서
+  의 소프트웨어 교육은 보편적인 지식과 실습을 통해 이루어저야지 상용SW를 사용하는 것을 가르치는 것은 안된
+  다는 것을 기치로 내걸고 있다.<p></p> 이러한 생각을 바탕으로 학교에 직접 개발한 리눅스기반 프로그램을 보급하고 있
+  다. 활동이 적을것 같지만 학생들을 중심으로 활발하게 활동중이다.<p></p>
+  <a href="https://cafe.naver.com/hardrestore">공개소프트웨어 컴퓨터실</a></a><p></p><br>
+  <strong>앵커스 커뮤니티</strong><p></p>
+  데이터 마이닝/머신러닝 분석 알고리즘 라이브러리 ankus를 개발&활성화하는 것을 전문으로 하는 커뮤니티이다.<p></p>
+  GPL ver.3.0 라이센스로 한국에서 개발한 소프트웨어로 지금도 기여를 통해 코드를 보완하고 있다. <p></p>코드 홍보와
+  세미나도 열고 있다.<p></p>
+  <a href="http://www.openankus.org/zeus/">앵커스 커뮤니티</a></a><p></p><br>
+  <strong>OSGeo Korean Chapter</strong><p></p>
+  오픈소스 지리정보시스템(GIS)을 개발하는 커뮤니티이다. 기여자들로 운영되고 있다. 특히 매년 GIS개발자들의
+  모임인 FOSS4G 컨퍼런스를 개최하고 있다.<p></p>
+  <a href="http://www.osgeo.kr/">KOREA GIS dev</a></a><p></p><br>
+  <strong>루씬 한글분석기 커뮤니티</strong><p></p>
+  공개SW 검색엔진인 Lucene을 한국어에서 잘 사용할 수 있도록 한글형태소분석을 기반으로 한 루씬한글분석기를
+  개발하는 커뮤니티 이다.<p></p>
+  <a href="https://cafe.naver.com/korlucene">LUCENE 한글분석기 커뮤니티</a></a><p></p><br>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+
+  <!-- 홈페이지 맨밑 footer -->
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>한양대학교 에리카 A-09 생각나는조이름이옾소용</p>
+    <p> 웹페이지의 파일은 <a href="https://github.com/akalswl14/os_web" title="Visit Github">https://github.com/akalswl14/os_web</a>에서
+      보실 수 있습니다!</p>
+<p>Bootstrap Theme Made By www.w3schools.com</p>
+<p>출처는 <a href="copyright.html">여기</a>로!</p> 
+  </footer>
+
+</body>
+
+</html>
